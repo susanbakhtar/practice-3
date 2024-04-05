@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'farnaz';
+    src: url(./fonst/B-Farnaz/B Farnaz_0.ttf) format('ttf');
+  }
+
+  body {
+    font-family: 'farnaz';
+    background-color: #e6e7ee;
+  }
+}
+
+@layer components {
+  .shadow-1 {
+    box-shadow: 4.5px 4.5px 9px #cbcbcb, -4.5px -4.5px 9px #ffffff;
+    color: #44476a;
+    border: 0.0625rem solid #d1d9e6;
+    background-color: #e6e7ee;
+    border-radius: 0.55rem;
+  }
+
+  .flex-rows {
+    @apply flex items-center gap-x-1;
+  }
+
+  .containers {
+    @apply pl-4 pr-4 pb-4;
+  }
+
+  .story-border {
+    background: linear-gradient(315deg, #e03d96, #7d4c9e);
+  }
+}
